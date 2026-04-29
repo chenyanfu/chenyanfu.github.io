@@ -1,1 +1,343 @@
-Welcome to my homepage! It's a good start
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你的名字 - 个人主页</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 动态背景 -->
+    <div class="bg-animation">
+        <div class="bg-blob blob-1"></div>
+        <div class="bg-blob blob-2"></div>
+        <div class="bg-blob blob-3"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-bracket">&lt;</span>Dev<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">关于</a></li>
+                <li><a href="#skills">技能</a></li>
+                <li><a href="#projects">项目</a></li>
+                <li><a href="#blog">博客</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero / 个人介绍 -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">👋 欢迎来到我的空间</div>
+                <h1 class="hero-title">
+                    我是 <span class="gradient-text">你的名字</span>
+                </h1>
+                <div class="hero-roles">
+                    <span class="role">全栈开发者</span>
+                    <span class="role-separator">·</span>
+                    <span class="role">开源爱好者</span>
+                    <span class="role-separator">·</span>
+                    <span class="role">技术写作者</span>
+                </div>
+                <p class="hero-desc">
+                    热爱用代码创造价值，专注于 Web 全栈开发与系统架构设计。
+                    相信技术应该简洁而优雅，在掘金、CSDN、知乎等平台持续分享技术文章，
+                    与社区共同成长。
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-num">5+</div>
+                        <div class="stat-label">年开发经验</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-num">30+</div>
+                        <div class="stat-label">技术文章</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-num">10+</div>
+                        <div class="stat-label">开源项目</div>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>查看作品</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="#blog" class="btn btn-secondary">
+                        <span>阅读博客</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/yourusername" target="_blank" class="social-link" title="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    </a>
+                    <a href="mailto:your.email@example.com" class="social-link" title="Email">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/></svg>
+                    </a>
+                    <a href="#" target="_blank" class="social-link" title="Twitter/X">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 关于 -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-header">
+                <span class="section-tag">ABOUT ME</span>
+                <h2 class="section-title">关于我</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4M2 7h20"/></svg>
+                    </div>
+                    <h3>全栈开发</h3>
+                    <p>从前端交互到后端架构，从数据库设计到云服务部署，能够独立完成完整的项目交付。</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h3>技术分享</h3>
+                    <p>热爱写作与分享，在多个技术社区发表文章，将复杂的技术概念用通俗易懂的方式传递。</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                    <h3>持续学习</h3>
+                    <p>技术日新月异，保持好奇心和学习热情，不断探索 AI、云原生等前沿技术领域。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能 -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="skills-header">
+                <span class="section-tag">SKILLS</span>
+                <h2 class="section-title">技术栈</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-item"><span class="skill-dot" style="--dot-color:#61dafb"></span>React</div>
+                <div class="skill-item"><span class="skill-dot" style="--dot-color:#42b883"></span>Vue.js</div>
+                <div class="skill-item"><span class="skill-dot" style="--dot-color:#3178c6"></span>TypeScript</div>
+                <div class="skill-item"><span class="skill-dot" style="--dot-color:#f7df1e"></span>JavaScript</div>
+                <div class="skill-item"><span class="skill-dot" style="--dot-color:#339933"></span>Node.js</div>
+                <div class="skill-item"><span class="dot dot" style="--dot-color:#00add8"></span>Go</div>
+                <div class="skill-item"><span class="skill-dot" style="--dot-color:#3776ab"></span>Python</div>
+                <div class="skill-item"><span class="skill-dot" style="--dot-color:#2496ed"></span>Docker</div>
+                <div class="skill-item"><span class="skill-dot" style="--dot-color:#ff9900"></span>AWS</div>
+                <div class="skill-item"><span class="skill-dot" style="--dot-color:#f05032"></span>Git</div>
+                <div class="skill-item"><span class="skill-dot" style="--dot-color:#f24e1e"></span>Figma</div>
+                <div class="skill-item"><span class="skill-dot" style="--dot-color:#4479a1"></span>MySQL</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目 -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="projects-header">
+                <span class="section-tag">PROJECTS</span>
+                <h2 class="section-title">精选项目</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%)">
+                        <div class="project-icon">🌐</div>
+                    </div>
+                    <div class="project-body">
+                        <h3>项目一名称</h3>
+                        <p>项目简短描述，说明这是什么以及解决了什么问题。可以是 Web 应用、工具库或开源项目。</p>
+                        <div class="project-tags">
+                            <span>React</span><span>Node.js</span><span>PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg> Demo</a>
+                            <a href="#" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%)">
+                        <div class="project-icon">📱</div>
+                    </div>
+                    <div class="project-body">
+                        <h3>项目二名称</h3>
+                        <p>另一个项目的描述，展示你的技术广度和解决实际问题的能力。</p>
+                        <div class="project-tags">
+                            <span>Python</span><span>FastAPI</span><span>Redis</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg> Demo</a>
+                            <a href="#" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)">
+                        <div class="project-icon">⚡</div>
+                    </div>
+                    <div class="project-body">
+                        <h3>项目三名称</h3>
+                        <p>第三个项目的亮点介绍，可以是开源工具、CLI 程序或其他创意作品。</p>
+                        <div class="project-tags">
+                            <span>Go</span><span>Docker</span><span>Kubernetes</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg> Demo</a>
+                            <a href="#" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技术博客 -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <div class="blog-header">
+                <span class="section-tag">BLOG</span>
+                <h2 class="section-title">技术博客</h2>
+                <p class="blog-intro">在以下平台持续输出技术文章，欢迎阅读与交流</p>
+            </div>
+            <div class="blog-platforms">
+                <a href="https://juejin.cn/user/yourid" target="_blank" class="platform-card">
+                    <div class="platform-icon" style="background: #1e80ff">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.532 3.928c.832 0 1.516.684 1.516 1.516v11.588c0 .832-.684 1.516-1.516 1.516H4.948a1.516 1.516 0 01-1.516-1.516V5.444c0-.832.684-1.516 1.516-1.516h7.584zm-7.584 1.516v11.588h7.584V5.444H4.948zM19.052 3.928h1.516v13.62h-1.516V3.928zm-3.032 4.548h1.516v9.072h-1.516V8.476z"/></svg>
+                    </div>
+                    <div class="platform-info">
+                        <h3>掘金</h3>
+                        <p>优质技术社区</p>
+                    </div>
+                    <div class="platform-arrow">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </div>
+                </a>
+                <a href="https://blog.csdn.net/yourid" target="_blank" class="platform-card">
+                    <div class="platform-icon" style="background: #fc5531">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.5 6h17v2h-17V6zm0 5h14v2h-14v-2zm0 5h10v2h-10v-2z"/></svg>
+                    </div>
+                    <div class="platform-info">
+                        <h3>CSDN</h3>
+                        <p>专业技术博客</p>
+                    </div>
+                    <div class="platform-arrow">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </div>
+                </a>
+                <a href="https://www.zhihu.com/people/yourid" target="_blank" class="platform-card">
+                    <div class="platform-icon" style="background: #0084ff">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5.721 0C2.251 0 0 2.25 0 5.719V18.28C0 21.751 2.252 24 5.721 24h12.56C21.751 24 24 21.75 24 18.281V5.72C24 2.249 21.75 0 18.281 0zm1.964 4.078c-.271.73-.5 1.434-.68 2.11h4.587c.545-.006.445 1.168.445 1.168H6.384a58.104 58.104 0 01-.112 3.797h2.912c.274.449.518.928.726 1.433.163.398.287.808.374 1.224H7.764c.104.64.16 1.27.16 1.87 0 .835-.088 1.63-.25 2.372h5.354l.005-.006c.024-.026.05-.051.074-.077.26-.292.52-.624.778-.995.45-.646.87-1.414 1.248-2.296.38-.882.7-1.87.956-2.96.255-1.088.45-2.278.584-3.563H8.266c.08-.607.18-1.22.303-1.836h4.59c.163-.005.258-1.172.258-1.172H8.926c.19-.67.415-1.366.68-2.095.177-.477.376-.95.598-1.413z"/></svg>
+                    </div>
+                    <div class="platform-info">
+                        <h3>知乎</h3>
+                        <p>问答与专栏</p>
+                    </div>
+                    <div class="platform-arrow">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </div>
+                </a>
+                <a href="https://segmentfault.com/u/yourid" target="_blank" class="platform-card">
+                    <div class="platform-icon" style="background: #009a61">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.447 3.105c-.283-.646-.928-1.06-1.643-1.06H4.196c-.715 0-1.36.414-1.643 1.06L0 9l2.553 5.895c.283.646.928 1.06 1.643 1.06h15.608c.715 0 1.36-.414 1.643-1.06L24 9l-2.553-5.895zM12 15a3 3 0 110-6 3 3 0 010 6z"/></svg>
+                    </div>
+                    <div class="platform-info">
+                        <h3>思否</h3>
+                        <p>开发者社区</p>
+                    </div>
+                    <div class="platform-arrow">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </div>
+                </a>
+            </div>
+            <div class="blog-articles">
+                <h3 class="articles-title">📄 热门文章</h3>
+                <div class="articles-list">
+                    <a href="https://juejin.cn/post/xxxx" target="_blank" class="article-row">
+                        <span class="article-name">如何构建高性能的 React 应用</span>
+                        <div class="article-meta">
+                            <span class="article-platform">掘金</span>
+                            <span class="article-date">2024.12</span>
+                        </div>
+                    </a>
+                    <a href="https://zhuanlan.zhihu.com/xxxx" target="_blank" class="article-row">
+                        <span class="article-name">Go 语言并发编程实战指南</span>
+                        <div class="article-meta">
+                            <span class="article-platform">知乎</span>
+                            <span class="article-date">2024.11</span>
+                        </div>
+                    </a>
+                    <a href="https://blog.csdn.net/xxxx" target="_blank" class="article-row">
+                        <span class="article-name">Docker 容器化部署完全指南</span>
+                        <div class="article-meta">
+                            <span class="article-platform">CSDN</span>
+                            <span class="article-date">2024.10</span>
+                        </div>
+                    </a>
+                    <a href="https://juejin.cn/post/xxxx" target="_blank" class="article-row">
+                        <span class="article-name">动态规划解题框架与技巧</span>
+                        <div class="article-meta">
+                            <span class="article-platform">掘金</span>
+                            <span class="article-date">2024.09</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-header">
+                <span class="section-tag">CONTACT</span>
+                <h2 class="section-title">联系我</h2>
+            </div>
+            <p class="contact-desc">有合作想法或技术交流？随时联系我！</p>
+            <a href="mailto:your.email@example.com" class="contact-email">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/></svg>
+                your.email@example.com
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 你的名字 · 用代码构建未来</p>
+        </div>
+    </footer>
+
+    <script>
+        // 导航栏滚动效果
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
