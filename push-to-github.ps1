@@ -63,7 +63,7 @@ try {
     
     $body = @{
         name = $repoName
-        description = "xfchen 的个人主页 - GitHub Pages"
+        description = "xfchen (chenyanfu) 的个人主页 - GitHub Pages"
         private = $false
         auto_init = $false
     } | ConvertTo-Json
